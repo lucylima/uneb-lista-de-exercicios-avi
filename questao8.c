@@ -2,7 +2,7 @@
 
 int main()
 {
-    float somatorio = 1.0;
+    float somatorio = 0.0;
     float contador = 1.0;
 
     while (contador < 99)
