@@ -3,12 +3,12 @@
 int main()
 {
     int perfeito = 0;
-    int entrada = 0;
+    int entrada = 28;
     int divisor = 0;
     int contador = 1;
-    
+
     printf("digite um numero e veja se ele e perfeito ou nao >> ");
-    scanf("%d", entrada);
+    scanf("%d", &entrada);
 
     while (contador < entrada)
     {
