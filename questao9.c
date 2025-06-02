@@ -10,7 +10,8 @@ int main()
     float soma_altura, media_altura = 0.0;
     float soma_mulheres, media_mulheres = 0.0;
 
-    int quantidade_mulheres, quantidade_turma = 0;
+    int quantidade_mulheres = 0,
+        quantidade_turma = 0;
 
     for (int contador = 0; contador < 3; contador++)
     {
@@ -40,7 +41,7 @@ int main()
 
         if (sexo[contador] == 'F' || sexo[contador] == 'f')
         {
-            soma_mulheres =soma_mulheres + lista_altura[contador];
+            soma_mulheres = soma_mulheres + lista_altura[contador];
             quantidade_mulheres++;
         }
 
@@ -54,14 +55,7 @@ int main()
     printf("a maior altura da turma e: %.2f\n", max_altura);
     printf("e a menor altura da turma e: %.2f\n", min_altura);
     printf("a media de altura da turma: %.2f\n", media_altura);
-    if (quantidade_mulheres > 2)
-    {
-        printf("a media de altura das mulheres: %f\n", media_mulheres);
-    }
-    else
-    {
-        printf("não houve mulheres suficiente para o calculo");
-    }
+    printf("a media de altura das mulheres: %.2f\n", media_mulheres);
 
     return 0;
 }
